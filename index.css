@@ -1,0 +1,67 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(203, 255, 203);
+}
+
+.logo{
+    display: flex; /* Use flexbox */
+    margin-left: 250px; /* Center align items horizontally */
+    height: 60.88px;
+    width: 184px;
+}
+
+.main-header {
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.main-nav {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align items horizontally */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /*Use flexbox */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+
+.nav-item {
+    margin: 0 10px; /* Adjust spacing between nav items */
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.nav-link:hover {
+    background-color: rgb(33, 116, 116);
+    border-radius: 5%
+}
+
+
+.firstsection{
+    background-color: rgb(149, 132, 243);
+}
+
+.secondsection{
+    background-color: blanchedalmond;
+}
