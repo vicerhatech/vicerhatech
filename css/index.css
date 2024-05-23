@@ -12,8 +12,7 @@ body {
 
 .logo{
     display: flex; /* Use flexbox */
-    margin-left: 210px; /* Center align items horizontally */
-    margin-right: 20px;
+    margin-left: 240px; /* Center align items horizontally */
     height: 45.88px;
     width: 130px;
 }
@@ -38,8 +37,8 @@ body {
     display: flex;  /*Use flexbox */
     padding-top: 10px;
     white-space: nowrap;
-    margin-right: 200px;
-    margin-left: 100px;
+    margin-right: 220px;
+    margin-left: 80px;
 }
 
 .nav-item {
@@ -51,13 +50,28 @@ body {
     padding: 10px 20px;
     color: white;
     text-decoration: none;
-    font-size: small;
+    font-size: 14px;
+}
+
+.nav-item::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(71, 71, 218);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-item:hover::after{
+    width: 100%;
 }
 
 .nav-link:hover {
     background-color: rgb(33, 116, 116);
     border-radius: 5%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
 }
 
 .dropdown{
@@ -71,6 +85,7 @@ body {
     background-color: rgb(151, 214, 151);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 10px;
     z-index: 1;
 }
 
@@ -92,8 +107,20 @@ body {
 }
 
 
-.firstsection{
-    background-color: rgb(149, 132, 243);
+.welcome-section{
+    text-align: center;
+    background-color: white;
+
+}
+
+.welcome-section h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+iframe{
+    width: 100%;
+    height: 720px;
 }
 
 .secondsection{
