@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicerha Tech</title>
+    <link rel="stylesheet" href="css/index.css"> 
+    <link rel="shortcut icon" href="images/VicErhaTech-Favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header" id="main-header">
+        <nav class="main-nav">
+            <a href="home.html"><img class="logo" src="images/VicErhaTech-Logo.png" alt="VicerhaTech Logo"></a>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a> </li>
+               <div class="dropdown" >
+                    <li class="nav-item"><a href="#platforms" class="nav-link">Resources <i class="fa fa-caret-down"> </i></a></li>
+                        <div class="dropdown-content">
+                             <li class="nav-item"><a href="#money" class="nav-link">Money Making Websites</a></li> 
+                             <li class="nav-item"><a href="#ai" class="nav-link">AI Tools</a></li>
+                             <li class="nav-item"><a href="#educational-tools" class="nav-link">Educational Tools</a></li>
+                             <li class="nav-item"><a href="#educational-tools" class="nav-link">Web Dev & Hosting Sites</a></li>
+                        </div>
+                </div>
+                <li class="nav-item"><a href="#motivational" class="nav-link">Motivational Talks</a></li>
+                <li class="nav-item"><a href="#relationship-tips" class="nav-link">Relationship Tips</a></li>
+                <li class="nav-item"><a href="#music" class="nav-link">Music Of The Month</a></li>
+                <li class="nav-item"><a href="#socialmedia" class="nav-link">Social Media Pages</a></li>
+                <li class="nav-item"><a href="#giveaway" class="nav-link">Giveaway/Freebies</a></li>
+                <!-- <li class="nav-item"><a href="#contact" class="nav-link">About</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="welcome-section" style="background-color: blue;"> 
+       <!-- Welcome video -->
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/F6PqxbvOCUI?si=WvXpkT5juBq3fQCW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+<section id="about-section" style="background-color: #C13584;">
+            <div class="col-sm-6 col-md-4 col-lg-4 profile-picture">
+                <img src="images/Youtube Characters_2x 2nd.jpg" alt="My Profile Picture" style="width: 100%; height: auto;">
+            </div>
+            <div class="col-sm-6 col-md-8 col-lg-8">
+                <div class="about-text">
+                    <h2 style="font-size: 38px;">About Me</h2>
+                    <p style="font-size: 20px;">Write a short description about yourself here. Mention your background, key achievements, and what motivates you. This is a brief introduction to give visitors an insight into who you are and what you do.</p>
+                    <h2 style="font-size: 38px;">My Expertise</h2>
+                    <p style="font-size: 20px;">Write a short description about yourself here. Mention your background, key achievements, and what motivates you. This is a brief introduction to give visitors an insight into who you are and what you do.</p>
+                </div>
+            </div>
+</section> 
+ <section id="signup-newsletter-section">
+        <center><h2 class="newsletter">Sign Up To My NewsLetter</h2>
+            <input type="email" required placeholder="Enter your email" class="newsletterinput">
+            <a href="home.html"><button type="submit" class="newsletterbutton">Sign Up</button></a>
+            </center>
+</section>
+
+<section id="latest-post">
+    <h2 style="margin-left: 20px; ">Latest Video Post <span style="font-size: 24px;">👉</span></h2>
+  <center><div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F6PqxbvOCUI?si=WvXpkT5juBq3fQCW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div> </center>  
+</section> 
+
+<section id="booking-section">
+    <div class="booking-form-container">
+        <h2 class="booking-form-header">Book a Private Session</h2>
+        <form id="booking-form" class="formclass">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="session-type">Type of Advice Needed</label>
+                <select class="form-control" id="session-type" required>
+                    <option value="">Select an option</option>
+                    <option value="relationship">Relationship Advice</option>
+                    <option value="financial">Financial Advice</option>
+                    <option value="career">Career Advice</option>
+                    <option value="health">Health and Wellness Advice</option>
+                    <option value="personal">Personal Development</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group d-none" id="other-reason-group">
+                <label for="other-reason">Please Specify</label>
+                <textarea class="form-control" id="other-reason" rows="3" placeholder="Please specify your reason"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" class="form-control" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea class="form-control" id="comments" rows="3" placeholder="Any additional information or questions"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+    
+    <footer style="background-color: #333; color: white; padding: 40px 0; margin-top: 50px; margin: 0px auto;">
+        <div style="max-width: 1200px; margin: auto; padding: 20px; display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Company Info -->
+            <div style="flex: 1 1 200px; margin: 10px;">
+                <h3 style="border-bottom: 2px solid #444; padding-bottom: 10px; margin-bottom: 20px;">About Us</h3>
+                <img src="images/VicErhaTech-Logo.png" alt="VicerhaTech Logo" style="height: 50px; margin-bottom: 20px;">
+                <p>VicerhaTech is a leading tech blog providing insights, tutorials, and resources for tech enthusiasts. Our mission is to empower our readers with knowledge and tools to succeed in the digital world.</p>
+            </div>
+            <!-- Quick Links -->
+            <div style="flex: 1 1 200px; margin: 10px;">
+                <h3 style="border-bottom: 2px solid #444; padding-bottom: 10px; margin-bottom: 20px;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#home" style="color: white; text-decoration: none; margin-bottom: 10px; display: block;">Home</a></li>
+                    <li><a href="#platforms" style="color: white; text-decoration: none; margin-bottom: 10px; display: block;">Platforms</a></li>
+                    <li><a href="#motivational" style="color: white; text-decoration: none; margin-bottom: 10px; display: block;">Motivational Talks</a></li>
+                    <li><a href="#music" style="color: white; text-decoration: none; margin-bottom: 10px; display: block;">Music Of The Month</a></li>
+                    <li><a href="#socialmedia" style="color: white; text-decoration: none; margin-bottom: 10px; display: block;">Social Media Pages</a></li>
+                    <li><a href="#sponsored-ad" style="color: white; text-decoration: none; margin-bottom: 10px; display: block;">Sponsored Adverts</a></li>
+                    <li><a href="#giveaway" style="color: white; text-decoration: none; margin-bottom: 10px; display: block;">Giveaway/Freebies</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div style="flex: 1 1 200px; margin: 10px;">
+                <h3 style="border-bottom: 2px solid #444; padding-bottom: 10px; margin-bottom: 20px;">Contact Us</h3>
+                <p>Email: <a href="mailto:info@vicerhatech.com" style="color: #0a95ff; text-decoration: none;">info@vicerhatech.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" style="color: #0a95ff; text-decoration: none;">+123 456 7890</a></p>
+                <p>Address: 123 Tech Street, Lagos, Nigeria</p>
+            </div>
+            <!-- Newsletter Signup -->
+            <div style="flex: 1 1 200px; margin: 10px;">
+                <h3 style="border-bottom: 2px solid #444; padding-bottom: 10px; margin-bottom: 20px;">Newsletter</h3>
+                <p>Subscribe to our newsletter to stay updated with our latest posts and offers.</p>
+                <form action="subscribe.php" method="post" style="display: flex;">
+                    <input type="email" name="email" placeholder="Enter your email" required style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px 0 0 5px; flex: 1;">
+                    <button type="submit" style="padding: 10px 20px; font-size: 14px; color: white; background-color: #28a745; border: none; border-radius: 0 5px 5px 0; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media Links -->
+        <div style="text-align: center; margin-top: 30px;">
+            <p>Follow us on:</p>
+            <a href="https://www.facebook.com" target="_blank" style="color: #3b5998; text-decoration: none; margin: 0 10px;">
+                <i class="fab fa-facebook-f" style="font-size: 20px;"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="color: #00acee; text-decoration: none; margin: 0 10px;">
+                <i class="fab fa-twitter" style="font-size: 20px;"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" style="color: #C13584; text-decoration: none; margin: 0 10px;">
+                <i class="fab fa-instagram" style="font-size: 20px;"></i>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 20px; font-size: 12px;">&copy; 2024 VicerhaTech. All rights reserved.</p>
+    </footer>
+    
+    <script src="index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+</body>
+</html>
