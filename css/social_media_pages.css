@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro-text{
+    text-align: center;
+    padding: 20px;
+    word-wrap: break-word;
+    font-size: 5px;
+}
+
+.intro-text h1{
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.follow-text{
+    margin-left: 50px;
+}
+
+.socialmedia{
+    font-weight: bold; 
+    text-align: center; 
+    color: black;
+}

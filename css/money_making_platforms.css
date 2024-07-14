@@ -1,0 +1,28 @@
+body {
+            
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centered-div {
+    font-weight: bold; 
+    border: 1px solid rgb(3, 30, 83); 
+    border-width: 4px; 
+    max-width: 300px; 
+    text-align: center; 
+    color: #000;
+    margin-top: 10px;
+}
+    
+.centered-div p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.centered-div-text{
+
+}

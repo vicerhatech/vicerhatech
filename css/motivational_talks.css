@@ -6,10 +6,25 @@ body {
     box-sizing: border-box;
 }
 
+#arrow-down{
+	position: fixed;
+	bottom: 50px;
+	right: 2%;
+	overflow:hidden;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+} 
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -moz-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
 .centered-div {
     text-align: center;
     background: linear-gradient(135deg, #3b5fd6, rgb(3, 30, 83) );
-    /* opacity: 80%; */
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -24,8 +39,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
 
 .centered-div-button{
     padding: 0 0 50px 0;
