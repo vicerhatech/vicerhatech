@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicerha Tech</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/social_media_pages.css"> 
     <link rel="shortcut icon" href="images/Vicerhatech-Favicon.png" type="image/x-icon" />
@@ -38,7 +39,7 @@
 
     <section class="welcome-section">
        <div class="intro-text">
-        <h1>Follow up with all my contents on my Social Media Pages:</h1>
+        <h3 style="letter-spacing: 10px; font-weight: bold;">Follow up with all my contents on my Social Media Pages:</h3 >
       </div>
      <p> <h2 class="follow-text">Follow me on <span class="socialmedia">YouTube</span>: <span style="font-size: 50px; margin-left: 200px;">👉</span> <a href="https://www.youtube.com/@vicerhatech" target="_blank"><img src="images/social media logo/youtube.png" alt="" style="width: 120px; height: 120px; margin-left: 20px; opacity: 82%;"> </a> </h2>  </p>
 
@@ -52,9 +53,33 @@
      <hr color="black" style="margin-top: 70px;">
     </section>
 
-<section>
-    <h2 style="margin-top: 60px; margin-left: 30px; color: black; font-weight: bold;">Social Media Analytics</h2><center><div  style="border: 1px solid black; border-width: 10px; border-radius: 50%; height: 600px; width: 600px;">
-</div></center>
+<section class="socialmedia-analytics">
+    <!-- <h2 style="margin-top: 60px; margin-left: 30px; color: black; font-weight: bold;">Social Media Analytics</h2><center><div  style="border: 1px solid black; border-width: 10px; border-radius: 50%; height: 600px; width: 600px;">
+</div></center> -->
+
+<h1 style="color: black; font-weight: bolder;">Social Media Analytics</h1>
+<div class="chart-container">
+    <canvas id="followersChart"></canvas>
+</div>
+<div class="legend">
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: rgb(255, 85, 113);"></div>Instagram
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: black;"></div>Twitter(X)
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: red;"></div>YouTube
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: blue;"></div>Facebook
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: rgb(255, 255, 255);"></div>TikTok
+    </div>
+</div>
+
+
 </section>
 <hr color="black" style="margin-top: 70px;">
 
@@ -182,6 +207,7 @@
     </footer>
     
     <script src="javascripts/index.js"></script>
+    <script src="javascripts/social_media_pages.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>

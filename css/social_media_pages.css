@@ -27,3 +27,32 @@ body{
     text-align: center; 
     color: black;
 }
+
+.socialmedia-analytics{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-container {
+    width: 60%;
+    margin-top: 50px;
+}
+.legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-weight: bold;
+    color: black;
+}
+.legend-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
