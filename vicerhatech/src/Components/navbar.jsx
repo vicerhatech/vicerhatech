@@ -24,13 +24,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/myportfolio/index.html" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-300">
-              Portfolio
+          <a href="/services" className="hover:text-indigo-300">
+              Services
             </a>
           </li>
           <li>
-            <a href="/services" className="hover:text-indigo-300">
-              Services
+          <a href="/myportfolio/index.html" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-300">
+              Portfolio
             </a>
           </li>
           <li>
