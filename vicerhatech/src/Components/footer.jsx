@@ -81,7 +81,7 @@ const Footer = () => {
         {/* Contact Us */}
         <div className="w-full md:w-1/4 mb-6 md:mb-0">
           <h3 className="text-lg font-semibold border-b-2 border-gray-700 pb-2 mb-4">
-            Contact Us
+            Contact Me
           </h3>
           <ul>
             <li className="flex items-center mb-2">
@@ -170,7 +170,7 @@ const Footer = () => {
             <FaTiktok />
           </a>
           <a
-            href="https://www.youtube.com/@vicerhatech"
+            href="https://www.youtube.com/@vicerhatech?sub_confirmation=1"
             target="_blank"
             rel="noreferrer"
             className="text-red-500 text-2xl"
