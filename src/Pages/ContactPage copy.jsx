@@ -8,11 +8,12 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+
+
 const Contact = () => {
-  useEffect(() => {
-    document.title =
-      "Contact | VicerhaTech | Professional Web Development | Boost Online Visibility | SEO-Friendly Web Solutions";
-  }, []);
+   useEffect(() => {
+      document.title = "Contact | VicerhaTech | Professional Web Development | Boost Online Visibility | SEO-Friendly Web Solutions";
+    }, []); 
 
   return (
     <div>
@@ -20,9 +21,9 @@ const Contact = () => {
         <div className="contact-title text-center font-bold text-4xl pt-6 pb-3">
           <h1>Contact Me</h1>
         </div>
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex-col w-full lg:w-1/2">
-            <div className="flex justify-left space-x-6 pt-7 pb-4">
+        <div className="flex">
+          <div className="flex-col">
+            <div className="flex justify-left space-x-6 pt-7 pb-4 ">
               <a
                 href="https://www.facebook.com/vicerhatech"
                 target="_blank"
@@ -68,18 +69,19 @@ const Contact = () => {
               <p className="font-medium pb-1">
                 Email:
                 <span className="font-bold px-16">
-                  <a href="mailto:info@vicerhatech.com">info@vicerhatech.com</a>
-                </span>
-              </p>
-              <p className="font-medium pb-1">
+                  <a href="mailto:info@vicerhatech.com">
+                    info@vicerhatech.com  
+                  </a>
+                </span> or 
                 Email:
                 <span className="font-bold px-16">
-                  <a href="mailto:support@vicerhatech.com">support@vicerhatech.com</a>
+                  <a href="mailto:support@vicerhatech.com">
+                    support@vicerhatech.com
+                  </a>
                 </span>
               </p>
               <p className="font-medium pb-1">
-                Phone Number:
-                <span className="font-bold px-13"> +234 806 811 9486</span>
+                Phone Number: <span className="font-bold px-13">+234 806 811 9486</span>
               </p>
               <p className="font-medium">
                 WhatsApp:
@@ -95,9 +97,11 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 mt-6 lg:mt-0 lg:pl-20">
-            <Form />
+          <div className="pl-20 w-full ">
+          <Form />
+
           </div>
+
         </div>
       </div>
     </div>

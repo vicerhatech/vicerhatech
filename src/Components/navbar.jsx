@@ -63,7 +63,7 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className="lg:hidden bg-[#070b7d]">
-          <ul className="flex flex-col items-center py-4 space-y-4">
+          <ul className="flex flex-col items-center py-4 space-y-4 md:text-2xl">
             <li>
               <a href="/" className="navs-links hover:text-indigo-300">
                 Home
