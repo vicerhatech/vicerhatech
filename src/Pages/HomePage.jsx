@@ -8,7 +8,7 @@ import contentcreator from "../Assets/images/video editing image.jpeg";
 import digitalcurator from "../Assets/images/digital curator image.png";
 
 const Home = () => {
-  return (
+    return (
     <div>
       <Helmet>
         <title>
@@ -31,9 +31,9 @@ const Home = () => {
       </div>
 
       <div className="body-section">
-        <h1 className="wid">WHAT I DO</h1>
+        <h1 className="wid text-3xl  lg:text-4xl font-bold text-gray-800">WHAT I DO</h1>
         <div className="sub-wid">
-          <p className="font-roboto italic">
+          <p className="font-roboto italic text-lg lg:text-xl font-bold text-gray-800">
             I offer services that enhance your online presence, boost
             engagement, and drive business growth.
           </p>

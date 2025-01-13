@@ -12,9 +12,9 @@ const Navbar = () => {
       <nav className="container flex items-center justify-between px-2 py-2 mx-auto">
         <a href="/"> <img src={logo} alt="" style={{ width: "180px", height: "60px" }} /> </a>
 
-        <ul className="hidden space-x-8 text-lg font-medium md:flex">
+        <ul className="hidden space-x-8 text-lg font-medium lg:flex">
           <li>
-            <a href="/" className="hover:text-indigo-300">
+            <a href="/" className="hover:text-indigo-300 ">
               Home
             </a>
           </li>
@@ -41,7 +41,7 @@ const Navbar = () => {
         </ul>
 
         <button
-          className="text-white md:hidden"
+          className="text-white lg:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -62,30 +62,30 @@ const Navbar = () => {
       </nav>
 
       {isMenuOpen && (
-        <div className="md:hidden bg-[#070b7d]">
+        <div className="lg:hidden bg-[#070b7d]">
           <ul className="flex flex-col items-center py-4 space-y-4">
             <li>
-              <a href="/" className="hover:text-indigo-300">
+              <a href="/" className="navs-links hover:text-indigo-300">
                 Home
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:text-indigo-300">
+              <a href="/about" className="navs-links hover:text-indigo-300">
                 About Me
               </a>
             </li>
             <li>
-            <a href="/myportfolio/index.html" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-300">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="/services" className="hover:text-indigo-300">
+              <a href="/services" className="navs-links hover:text-indigo-300">
                 Services
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-indigo-300">
+            <a href="/myportfolio/index.html" target="_blank" rel="noopener noreferrer" className="navs-links hover:text-indigo-300">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="/contact" className="navs-links hover:text-indigo-300">
                 Contact
               </a>
             </li>

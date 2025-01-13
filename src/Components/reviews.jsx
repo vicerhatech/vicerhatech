@@ -16,7 +16,7 @@ const ReviewCarousel = () => {
       rating: 5,
     },
     {
-      name: "Mrs Precious",
+      name: "Miss Precious",
       location: "London, UK",
       image: precious_pic,
       comment:
@@ -56,8 +56,8 @@ const ReviewCarousel = () => {
   return (
     <section id="reviews" className="bg-gray-100 py-12">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">Client Reviews</h2>
-        <p className="text-gray-600">What our clients say about us</p>
+        <h2 className="text-3xl  lg:text-4xl font-bold text-gray-800">Client Reviews</h2>
+        <p className="text-gray-600  text-lg lg:text-xl ">What our clients say about us</p>
       </div>
       <div className="relative max-w-4xl mx-auto">
         <div className="overflow-hidden">
@@ -74,21 +74,21 @@ const ReviewCarousel = () => {
                   <img
                     src={review.image}
                     alt={review.name}
-                    className="w-20 h-20 mx-auto rounded-full"
+                    className="w-20 h-20 mx-auto rounded-full w-33 h-33 lg:w-35 lg:h-35"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className=" text-2xl font-semibold text-gray-800">
                   {review.name}
                 </h3>
-                <p className="text-gray-500">{review.location}</p>
-                <div className="flex justify-center my-4 text-yellow-500">
+                <p className=" location text-gray-500 text-2xl">{review.location}</p>
+                <div className="flex justify-center my-4 text-yellow-500 text-2xl">
                   {Array(review.rating)
                     .fill()
                     .map((_, i) => (
                       <i key={i} className="fas fa-star"></i>
                     ))}
                 </div>
-                <p className="text-gray-600 italic">{`"${review.comment}"`}</p>
+                <p className=" comment text-gray-600  text-2xl italic">{`"${review.comment}"`}</p>
               </div>
             ))}
           </div>

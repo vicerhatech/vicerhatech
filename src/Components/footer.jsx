@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-10">
       <div className="container mx-auto px-6 flex flex-wrap justify-between">
-        <div className="w-full md:w-1/4 mb-6 md:mb-0">
+        <div className="w-full lg:w-1/4 mb-6 lg:mb-0">
           <h3 className="text-lg font-semibold border-b-2 border-gray-700 pb-2 mb-4">
             About Us
           </h3>
@@ -28,7 +28,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-1/4 mb-6 md:mb-0">
+        <div className="w-full lg:w-1/4 mb-6 lg:mb-0">
           <h3 className="text-lg font-semibold border-b-2 border-gray-700 pb-2 mb-4">
             Quick Links
           </h3>
@@ -76,7 +76,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/4 mb-6 md:mb-0">
+        <div className="w-full lg:w-1/4 mb-6 lg:mb-0">
           <h3 className="text-lg font-semibold border-b-2 border-gray-700 pb-2 mb-4">
             Contact Me
           </h3>
@@ -104,7 +104,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/4 mb-6 md:mb-0">
+        <div className="w-full  xl:w-1/4 lg:pt-10 xl:pt-0 mb-6 lg:mb-0">
           <h3 className="text-lg font-semibold border-b-2 border-gray-700 pb-2 mb-4">
             Newsletter
           </h3>

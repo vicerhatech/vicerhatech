@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import profilepic from "../Assets/images/profilepic.png";
 
+
 const About = () => {
+  useEffect(() => {
+    document.title = "About | VicerhaTech | Expert Full-Stack Developer & Digital Transformation Specialist";
+  }, []); 
+  
   return (
     <div className="bg-formlightBackground py-10 px-5">
       <div className="max-w-7xl mx-auto bg-white rounded-lg shadow-lg p-10">
@@ -41,8 +46,10 @@ const About = () => {
           <h2 className="text-3xl font-bold text-deepBlue mb-4">Skills</h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-lg">
             <li className="text-gray-700">
-              <strong>Web Development:</strong> Html, Css, Bootstrap, Javascript, WordPress, React,
-              Tailwind CSS, Express.js, MongoDB, Node js, Git and GitHub, Shopify, PHP, Postman (API testing), Magento.
+              <strong>Web Development:</strong> Html, Css, Bootstrap,
+              Javascript, WordPress, React, Tailwind CSS, Express.js, MongoDB,
+              Node js, Git and GitHub, Shopify, PHP, Postman (API testing),
+              Magento.
             </li>
             <li className="text-gray-700">
               <strong>Content Creation:</strong> Video editing, Scriptwriting,
@@ -53,9 +60,9 @@ const About = () => {
               presentation design
             </li>
             <li className="text-gray-700">
-              <strong>Specialization:</strong> Crafting user-centric websites and applications
-              and digital content that combine functionality with aesthetic
-              appeal, ensuring a seamless experience for users.
+              <strong>Specialization:</strong> Crafting user-centric websites
+              and applications and digital content that combine functionality
+              with aesthetic appeal, ensuring a seamless experience for users.
             </li>
 
             <li className="text-gray-700">
@@ -81,9 +88,9 @@ const About = () => {
             Hobbies & Interests
           </h2>
           <p className="text-gray-700 leading-relaxed text-lg">
-            Outside of work, I enjoy singing, recording music and staying updated
-            with the latest tech trends. I’m also passionate about creating
-            meaningful content that inspires and informs others.
+            Outside of work, I enjoy singing, recording music and staying
+            updated with the latest tech trends. I’m also passionate about
+            creating meaningful content that inspires and informs others.
           </p>
         </section>
       </div>

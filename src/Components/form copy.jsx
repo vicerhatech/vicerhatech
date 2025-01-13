@@ -1,16 +1,18 @@
 import React from "react";
 
 const Form = () => {
-    return (
-        <div>
-            <div className="form-section">
-        <div className=" form bg-formlightBackground p-6 rounded-md shadow-xl max-w-lg mx-auto">
+  return (
+    <div>
+      <div className="form-section">
+        <div className="form bg-formlightBackground p-6 rounded-md shadow-xl max-w-lg mx-auto">
           <h2 className="text-2xl font-semibold text-center mb-4">
             Get in Touch
           </h2>
           <form
-            action="https://formspree.io/f/your_form_id" // Replace with your Formspree endpoint
-            method="POST"className="space-y-4">
+            action="https://formspree.io/f/xrbbovqb"
+            method="POST"
+            className="space-y-4"
+          >
             <div className="flex flex-col">
               <label htmlFor="fullName" className="text-sm font-medium">
                 Full Name
@@ -18,13 +20,13 @@ const Form = () => {
               <input
                 type="text"
                 id="fullName"
+                name="fullName"
                 placeholder="Enter your full name"
                 className="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
             </div>
 
-            
             <div className="flex flex-col">
               <label htmlFor="email" className="text-sm font-medium">
                 Email Address
@@ -32,6 +34,7 @@ const Form = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="Enter your email"
                 className="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
@@ -45,6 +48,7 @@ const Form = () => {
               <input
                 type="tel"
                 id="phone"
+                name="phone"
                 placeholder="Enter your phone number"
                 className="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
@@ -56,13 +60,14 @@ const Form = () => {
               </label>
               <select
                 id="purpose"
+                name="purpose"
                 className="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               >
                 <option value="">Select an option</option>
-                <option value="services">My Services (Basic)</option>
-                <option value="services">My Services (Premium)</option>
-                <option value="services">My Services (Elite)</option>
+                <option value="services-basic">My Services (Basic)</option>
+                <option value="services-premium">My Services (Premium)</option>
+                <option value="services-elite">My Services (Elite)</option>
                 <option value="collaboration">Collaboration</option>
                 <option value="sponsorship">Sponsorship</option>
                 <option value="promotion">Promotion</option>
@@ -77,6 +82,7 @@ const Form = () => {
               <input
                 type="text"
                 id="subject"
+                name="subject"
                 placeholder="Enter your subject"
                 className="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
@@ -89,6 +95,7 @@ const Form = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows="4"
                 placeholder="Enter your message"
                 className="p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -105,8 +112,8 @@ const Form = () => {
           </form>
         </div>
       </div>
-        </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Form
+export default Form;

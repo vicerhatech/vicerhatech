@@ -1,5 +1,4 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React, { useEffect } from "react";
 import Form from "../Components/form";
 import {
   FaFacebookF,
@@ -9,16 +8,15 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+
+
 const Contact = () => {
+   useEffect(() => {
+      document.title = "Contact | VicerhaTech | Professional Web Development | Boost Online Visibility | SEO-Friendly Web Solutions";
+    }, []); 
+
   return (
     <div>
-      <Helmet>
-        <title>
-          Contact Us | Sapphire Skincare - Best Natural Beauty & Skincare
-          Support
-        </title>
-      </Helmet>
-
       <div className="contact-container bg-formlightBackground">
         <div className="contact-title text-center font-bold text-4xl pt-6 pb-3">
           <h1>Contact Me</h1>

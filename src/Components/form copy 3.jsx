@@ -3,14 +3,14 @@ import emailjs from "emailjs-com";
 
 const Form = () => {
   const sendEmail = (e) => {
-    e.preventDefault(); 
+    e.preventDefault(); // Prevent form submission
 
     emailjs
       .sendForm(
-        "service_8r9s3la",
-        "template_59h4tff", 
+        "service_8r9s3la", // Replace with your EmailJS Service ID
+        "template_59h4tff", // Replace with your EmailJS Template ID
         e.target,
-        "azBj95q6huApClb-A" 
+        "azBj95q6huApClb-A" // Replace with your EmailJS Public Key/User ID
       )
       .then(
         (result) => {
@@ -23,7 +23,7 @@ const Form = () => {
         }
       );
 
-    e.target.reset(); 
+    e.target.reset(); // Reset form fields after submission
   };
 
   return (
@@ -31,9 +31,9 @@ const Form = () => {
       <div className="form-section">
         <div className="form bg-formlightBackground p-6 rounded-md shadow-xl max-w-lg mx-auto">
           <h2 className="text-2xl font-semibold text-center mb-4">Get in Touch</h2>
-          <form className="space-y-4 text-lg" onSubmit={sendEmail}>
+          <form className="space-y-4" onSubmit={sendEmail}>
             <div className="flex flex-col">
-              <label htmlFor="fullName" className="text-lg font-medium">
+              <label htmlFor="fullName" className="text-sm font-medium">
                 Full Name
               </label>
               <input
@@ -46,7 +46,7 @@ const Form = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="email" className="text-lg font-medium">
+              <label htmlFor="email" className="text-sm font-medium">
                 Email Address
               </label>
               <input
@@ -59,7 +59,7 @@ const Form = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="phone" className="text-lg font-medium">
+              <label htmlFor="phone" className="text-sm font-medium">
                 Phone Number (Optional)
               </label>
               <input
@@ -71,7 +71,7 @@ const Form = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="purpose" className="text-lg font-medium">
+              <label htmlFor="purpose" className="text-sm font-medium">
                 Purpose of Contact
               </label>
               <select
@@ -91,7 +91,7 @@ const Form = () => {
               </select>
             </div>
             <div className="flex flex-col">
-              <label htmlFor="subject" className="text-lg font-medium">
+              <label htmlFor="subject" className="text-sm font-medium">
                 Subject
               </label>
               <input
@@ -104,7 +104,7 @@ const Form = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="message" className="text-lg font-medium">
+              <label htmlFor="message" className="text-sm font-medium">
                 Message
               </label>
               <textarea
