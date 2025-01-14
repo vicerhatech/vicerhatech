@@ -251,3 +251,23 @@
   new PureCounter();
 
 })()
+
+
+
+const birthYear = 2005;
+  const birthMonth = 8; // August (JavaScript months are 0-indexed, so August is 8)
+  const birthDay = 29;
+
+  const today = new Date();
+  let age = today.getFullYear() - birthYear;
+
+  // Adjust if the birthday hasn't occurred yet this year
+  const hasBirthdayPassed = 
+    today.getMonth() > (birthMonth - 1) || 
+    (today.getMonth() === (birthMonth - 1) && today.getDate() >= birthDay);
+
+  if (!hasBirthdayPassed) {
+    age -= 1;
+  }
+
+  document.getElementById('age').textContent = age;

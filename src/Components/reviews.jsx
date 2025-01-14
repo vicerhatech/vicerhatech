@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import idris_pic from "../Assets/images/idris.png";
-import precious_pic from "../Assets/images/precious.jpg";
+import precious_pic from "../Assets/images/precious.png";
 import melodia_pic from "../Assets/images/melodia.png";
 import gabriel_pic from "../Assets/images/gabrieludohanie.png";
 

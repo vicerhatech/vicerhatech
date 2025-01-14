@@ -149,7 +149,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://www.instagram.com/vicerhatech"
+            href="https://www.instagram.com/vicerhatech_"
             target="_blank"
             rel="noreferrer"
             className="text-pink-500 text-2xl"
