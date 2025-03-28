@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReviewCarousel from "../Components/reviews";
 import Form from "../Components/form";
 import "../Assets/css/home.css";
