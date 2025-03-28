@@ -1,22 +1,18 @@
 import React from "react";
 import ReviewCarousel from "../Components/reviews";
 import Form from "../Components/form";
-import { Helmet } from "react-helmet";
 import "../Assets/css/home.css";
 import webdev from "../Assets/images/web development image.png";
 import contentcreator from "../Assets/images/video editing image.jpeg";
 import digitalcurator from "../Assets/images/digital curator image.png";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Top-Rated Web Development & Design Services | Custom Websites & Digital Solutions | VicerhaTech";
+  }, []);
+
     return (
     <div>
-      <Helmet>
-        <title>
-        Top-Rated Web Development & Design Services | Custom Websites & Digital Solutions | VicerhaTech
-        </title>
-      </Helmet>
-
-
       <div className="intro-section">
         <p className="home-title">Welcome to my Digital Space</p>
         <p className="home-text">
