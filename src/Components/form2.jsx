@@ -1,32 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 
+
 const Form = ({selectedService}) => {
+  const [formMessage, setFormMessage] = useState("");
+  const [messageColor, setMessageColor] = useState("");
+
   const sendEmail = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
+
+    setFormMessage("Sending...");
+    setMessageColor("#333");
 
     emailjs
-      .sendForm(
-        "service_8r9s3la",
-        "template_59h4tff", 
+      .sendForm( 
+        "service_8r9s3la",         
+        "template_59h4tff",        
         e.target,
-        "azBj95q6huApClb-A" 
+        "azBj95q6huApClb-A"       
       )
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent successfully!");
+          setMessageColor("green");
+          setFormMessage("Your message has been sent successfully. We'll get back to you shortly.");
         },
         (error) => {
           console.log(error.text);
-          alert("Failed to send the message. Please try again.");
+          setMessageColor("red");
+          setFormMessage("Failed to send the message. Please try again.");
         }
       );
 
-    e.target.reset(); 
+    e.target.reset();
   };
 
+  
+  
     return (
         <div>
             <div className="form-section">
@@ -124,6 +135,10 @@ const Form = ({selectedService}) => {
               Send Message
             </button>
           </form>
+
+          <div style={{ marginTop: "10px", fontWeight: "bold", color: messageColor }}>
+        {formMessage}
+      </div>
         </div>
       </div>
         </div>
