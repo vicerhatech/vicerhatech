@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import profilepic from "../Assets/images/profilepic.png";
 
 

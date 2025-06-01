@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../Assets/images/Vicerhatech-Logo.png";
 
 const Navbar = () => {

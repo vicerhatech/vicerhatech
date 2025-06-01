@@ -1,16 +1,15 @@
-import React from "react";
 import emailjs from "emailjs-com";
 
 const Form = () => {
   const sendEmail = (e) => {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault(); 
 
     emailjs
       .sendForm(
-        "service_8r9s3la", // Replace with your EmailJS Service ID
-        "template_59h4tff", // Replace with your EmailJS Template ID
+        "service_8r9s3la", 
+        "template_59h4tff", 
         e.target,
-        "azBj95q6huApClb-A" // Replace with your EmailJS Public Key/User ID
+        "azBj95q6huApClb-A" 
       )
       .then(
         (result) => {
@@ -23,7 +22,7 @@ const Form = () => {
         }
       );
 
-    e.target.reset(); // Reset form fields after submission
+    e.target.reset();
   };
 
   return (

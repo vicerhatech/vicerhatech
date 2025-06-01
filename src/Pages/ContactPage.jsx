@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Form from "../Components/form";
 import {
   FaFacebookF,
@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="flex-col w-full lg:w-1/2">
             <div className="flex justify-left space-x-6 pt-7 pb-4">
               <a
-                href="https://www.facebook.com/vicerhatech"
+                href="https://www.facebook.com/vicerhatech1"
                 target="_blank"
                 rel="noreferrer"
                 className="text-blue-500 text-7xl"
@@ -68,13 +68,13 @@ const Contact = () => {
               <p className="font-medium pb-1">
                 Email:
                 <span className="font-bold px-16">
-                  <a href="mailto:info@vicerhatech.com">info@vicerhatech.com</a>
+                  <a href="mailto:vicerhatech@gmail.com">vicerhatech@gmail.com</a>
                 </span>
               </p>
               <p className="font-medium pb-1">
                 Email:
                 <span className="font-bold px-16">
-                  <a href="mailto:support@vicerhatech.com">support@vicerhatech.com</a>
+                  <a href="mailto:victorchideibere@gmail.com">victorchideibere@gmail.com</a>
                 </span>
               </p>
               <p className="font-medium pb-1">

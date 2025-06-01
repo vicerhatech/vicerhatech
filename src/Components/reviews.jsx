@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import idris_pic from "../Assets/images/idris.png";
 import precious_pic from "../Assets/images/precious.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -95,10 +94,10 @@ const Footer = () => {
             <li className="flex items-center mb-2">
               <FaEnvelope className="mr-2" />
               <a
-                href="mailto:support@vicerhatech.com"
+                href="mailto:vicerhatech@gmail.com"
                 className="hover:text-green-400"
               >
-                support@vicerhatech.com
+                vicerhatech@gmail.com
               </a>
             </li>
           </ul>
@@ -133,7 +132,7 @@ const Footer = () => {
         <p className="mb-4">Follow us on:</p>
         <div className="flex justify-center space-x-4">
           <a
-            href="https://www.facebook.com/vicerhatech"
+            href="https://www.facebook.com/vicerhatech1"
             target="_blank"
             rel="noreferrer"
             className="text-blue-500 text-2xl"
