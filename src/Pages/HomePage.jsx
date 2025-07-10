@@ -4,7 +4,7 @@ import Form from "../Components/form";
 import "../Assets/css/home.css";
 import webdev from "../Assets/images/web development image.png";
 import contentcreator from "../Assets/images/video editing image.jpeg";
-import digitalcurator from "../Assets/images/digital curator image.png";
+import musicpromotion from "../Assets/images/vibes-verified.png";
 
 const Home = () => {
   useEffect(() => {
@@ -51,6 +51,20 @@ const Home = () => {
 
           <div className="card1 shadow-lg">
             <img
+              src={musicpromotion}
+              alt="music-promotion"
+              style={{
+                width: "350px",
+                height: "300px",
+                borderTopLeftRadius: "7px",
+                borderTopRightRadius: "7px",
+              }}
+            />
+            <div className="card-text">Music Promotion</div>
+          </div>
+
+          <div className="card1 shadow-lg">
+            <img
               src={contentcreator}
               alt="content-creator"
               style={{
@@ -63,19 +77,7 @@ const Home = () => {
             <div className="card-text">Content Creation</div>
           </div>
 
-          <div className="card1 shadow-lg">
-            <img
-              src={digitalcurator}
-              alt="digital-curator"
-              style={{
-                width: "350px",
-                height: "300px",
-                borderTopLeftRadius: "7px",
-                borderTopRightRadius: "7px",
-              }}
-            />
-            <div className="card-text">Digital Curation</div>
-          </div>
+          
         </div>
         
       <ReviewCarousel />
