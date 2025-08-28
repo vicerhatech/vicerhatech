@@ -79,7 +79,7 @@ const Contact = () => {
               </p>
               <p className="font-medium pb-1">
                 Phone Number:
-                <span className="font-bold px-13"> +234 806 811 9486</span>
+                <span className="font-bold px-13"> +44 744 147 7620 , +234 806 811 9486</span>
               </p>
               <p className="font-medium">
                 WhatsApp:
