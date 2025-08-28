@@ -91,6 +91,17 @@ const Footer = () => {
                 +234 806 811 9486
               </a>
             </li>
+                        <li className="flex items-center mb-2">
+              <FaPhone className="mr-2" />
+              <a
+                href="/src/Pages/ContactPage.jsx"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-green-400"
+              >
+                +44 744 147 7620
+              </a>
+            </li>
             <li className="flex items-center mb-2">
               <FaEnvelope className="mr-2" />
               <a
