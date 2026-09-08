@@ -22,7 +22,7 @@ const About = () => {
           <h2 className="text-3xl font-bold text-deepBlue mb-4">My Journey</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
             My name is Victor Chidiebere Erhabor, and I’m a passionate
-            <strong> Digital Curator, Web Developer, </strong>
+            <strong> Digital Curator, Software Developer, </strong>
             and <strong>Content Creator</strong>. I started my journey with a
             deep interest in technology, design, and storytelling. Over the
             years, I have transformed this passion into a fulfilling career,
