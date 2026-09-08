@@ -4,7 +4,7 @@ import Form from "../Components/form";
 import "../Assets/css/home.css";
 import webdev from "../Assets/images/web development image.png";
 import contentcreator from "../Assets/images/video editing image.jpeg";
-import musicpromotion from "../Assets/images/vibes-verified.png";
+import mobiledevelopment from "../Assets/images/mobile-development.jpeg";
 
 const Home = () => {
   useEffect(() => {
@@ -51,8 +51,8 @@ const Home = () => {
 
           <div className="card1 shadow-lg">
             <img
-              src={musicpromotion}
-              alt="music-promotion"
+              src={mobiledevelopment}
+              alt="mobile-development"
               style={{
                 width: "350px",
                 height: "300px",
@@ -60,7 +60,7 @@ const Home = () => {
                 borderTopRightRadius: "7px",
               }}
             />
-            <div className="card-text">Music Promotion</div>
+            <div className="card-text">Mobile Development</div>
           </div>
 
           <div className="card1 shadow-lg">

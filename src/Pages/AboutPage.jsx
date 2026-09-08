@@ -88,7 +88,7 @@ const About = () => {
             Hobbies & Interests
           </h2>
           <p className="text-gray-700 leading-relaxed text-lg">
-            Outside of work, I enjoy singing, recording music and staying
+            Outside of work, I enjoy playing video games, and staying
             updated with the latest tech trends. I’m also passionate about
             creating meaningful content that inspires and informs others.
           </p>

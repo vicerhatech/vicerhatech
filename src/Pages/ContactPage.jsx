@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Form from "../Components/form";
 import {
-  FaFacebookF,
+  // FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaTiktok,
@@ -23,14 +23,14 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row">
           <div className="flex-col w-full lg:w-1/2">
             <div className="flex justify-left space-x-6 pt-7 pb-4">
-              <a
+              {/* <a
                 href="https://www.facebook.com/vicerhatech1"
                 target="_blank"
                 rel="noreferrer"
                 className="text-blue-500 text-7xl"
               >
                 <FaFacebookF />
-              </a>
+              </a> */}
               <a
                 href="https://x.com/vicerhatech"
                 target="_blank"
@@ -40,7 +40,7 @@ const Contact = () => {
                 <FaTwitter />
               </a>
               <a
-                href="https://www.instagram.com/vicerhatech_"
+                href="https://www.instagram.com/vicerhatech"
                 target="_blank"
                 rel="noreferrer"
                 className="text-pink-500 text-7xl"

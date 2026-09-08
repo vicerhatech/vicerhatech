@@ -1,5 +1,5 @@
 import {
-  FaFacebookF,
+  // FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaTiktok,
@@ -91,7 +91,7 @@ const Footer = () => {
                 +234 806 811 9486
               </a>
             </li>
-                        <li className="flex items-center mb-2">
+                        {/* <li className="flex items-center mb-2">
               <FaPhone className="mr-2" />
               <a
                 href="/src/Pages/ContactPage.jsx"
@@ -99,9 +99,9 @@ const Footer = () => {
                 rel="noreferrer"
                 className="hover:text-green-400"
               >
-                +44 744 147 7620
+                +44 7732 725996
               </a>
-            </li>
+            </li> */}
             <li className="flex items-center mb-2">
               <FaEnvelope className="mr-2" />
               <a
@@ -142,14 +142,14 @@ const Footer = () => {
       <div className="mt-10 text-center">
         <p className="mb-4">Follow us on:</p>
         <div className="flex justify-center space-x-4">
-          <a
+          {/* <a
             href="https://www.facebook.com/vicerhatech1"
             target="_blank"
             rel="noreferrer"
             className="text-blue-500 text-2xl"
           >
             <FaFacebookF />
-          </a>
+          </a> */}
           <a
             href="https://x.com/vicerhatech"
             target="_blank"
@@ -159,7 +159,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://www.instagram.com/vicerhatech_"
+            href="https://www.instagram.com/vicerhatech"
             target="_blank"
             rel="noreferrer"
             className="text-pink-500 text-2xl"
